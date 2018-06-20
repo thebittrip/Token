@@ -5,7 +5,7 @@ interface theBittripRecipient { function receiveApproval(address _from, uint256 
 contract TheBittrip {
     string public name;
     string public symbol;
-    uint8 public decimals = 18;
+    uint8 public decimals = 8;
     uint256 public totalSupply;
     
     mapping (address => uint256) public balanceOf;
