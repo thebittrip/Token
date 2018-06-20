@@ -1,3 +1,5 @@
+#WELCOME TO BITTRIP
+
 We use ETH platform for established trustworthy smart contracts between parties. For the future, we will develop side-chain or “off-chain” transactions similar to Lightning Network for future scaling.
 
 We will also develop AI programs to automate most disputes and recommend most suitable accommodations for travellers.
