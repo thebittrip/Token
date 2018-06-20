@@ -3,20 +3,24 @@ pragma solidity ^0.4.24;
 interface theBittripRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) external; }
 
 contract TheBittrip {
-    string public name = "The Bittrip";
-    
-    string public symbol = 'BTT';
+    string public name;
+    string public symbol;
     uint8 public decimals = 18;
-    uint256 public totalSupply = 250000000 * 10 ** uint256(decimals);
-
+    uint256 public totalSupply;
+    
     mapping (address => uint256) public balanceOf;
     mapping (address => mapping (address => uint256)) public allowance;
-
+   
     event Transfer(address indexed from, address indexed to, uint256 value);
 
     event Burn(address indexed from, uint256 value);
-
-    
+    function TokenERC20(
+    ) public {
+        totalSupply = 250000000 * 10 ** uint256(decimals);  
+        balanceOf[msg.sender] = totalSupply;    
+        name = "The Bittrip";                     
+        symbol = "BTT";                     
+    }
     function _transfer(address _from, address _to, uint _value) internal {
         require(_to != 0x0);
         require(balanceOf[_from] >= _value);
