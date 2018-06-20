@@ -19,7 +19,7 @@ contract TheBittrip {
         totalSupply = 250000000 * 10 ** uint256(decimals);  
         balanceOf[msg.sender] = totalSupply;    
         name = "The Bittrip";                     
-        symbol = "BTT";                     
+        symbol = "BIT";                     
     }
     function _transfer(address _from, address _to, uint _value) internal {
         require(_to != 0x0);
